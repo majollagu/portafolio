@@ -2,7 +2,6 @@ var book = $('.bk-book');
 var bookPage = book.children('div.bk-page');
 var viewBookLink = book.find('.bk-bookview');
 var viewBackLink = book.find('.bk-bookback');
-var changeColorLink = book.find('.change-color');
 var colorContainers = book.find('.color-container');
 
 var bookDefault = function(){
@@ -35,36 +34,6 @@ viewBackLink.on('click', function(){
 viewBookLink.on('click', function(){
   bookInside();
   return false;
-});
-
-//Detect click outside book
-$('html').on( 'click', function(event) {
-  if ($(event.target).parents('.bk-book').length == 0){
-    bookDefault();
-    if (!colorContainers.hasClass('hidden'))
-      changeColorLink.click();
-  }
-  return false;
-});
-
-//Change color
-var colorLabel = (function(){
-  var labels = ['Change Color', '❤ this color']
-  return function(){
-    labels.push(labels.shift());
-    return labels[0];
-  }
-})();
-changeColorLink.click(function(){
-  colorContainers.toggleClass('hidden');
-  $(this).text(colorLabel());
-});
-
-var css = $("<style type='text/css'></style>").appendTo('head');
-
-colorContainers.find('.color-square').click(function(){
-  var color = $(this).attr('class').match(/background-color-([a-f0-9]{6})/i)[1];
-  css.text('.highlight { color: #' + color + '; }');
 });
 
 //Bookblock clone and setup

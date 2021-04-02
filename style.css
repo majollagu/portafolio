@@ -30,7 +30,7 @@ html, body { height: 100%; }
 
 body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
-    background: #333;
+    background: #090a09;
     font-size: 15px;
     color: #fff;
     overflow: scroll;
@@ -363,6 +363,7 @@ a {
 }
 
 .bk-book .bk-back p {
+  font: 800 1em "open sans";
 	color: #fff;
 	font-size: 0.9em;
 	padding: 40px;
@@ -372,13 +373,15 @@ a {
   width: 100%;
 }
 
+/* parte trasera */
 .bk-book .bk-back h1{
-  font: 800 8em "open sans";
+  font: 800 2em "open sans";
   text-align: center;
   height: 100%;
   display: table-cell;
   vertical-align: middle;
 }
+
 
 .bk-book .bk-page .color-square,
 .bk-book .bk-cover-back .color-square{  
@@ -388,7 +391,7 @@ a {
   float: left;
   font: 800 8em "open sans";
   text-align: center;
-  color: #333;
+  color: #fff;
 
 }
 
@@ -399,11 +402,47 @@ a {
  background-size: contain;
 } */
 
-.cv {
-  background-image: url(img/cvbksf1.png);
+/* imagenes */
+.imgbk {
+  background-image: url(img/mockup.PNG);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.imgbk:hover {
+  transition:all .5s ease-in-out;
+  background-image: url(img/qr-mockup.png);
+  background-size: 60%;
+  
+}
+
+.imgbk1 {
+  background-image: url(img/boyaca2.PNG);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.imgbk1:hover {
+  transition:all .5s ease-in-out;
+  background-image: url(img/qr-boyaca.png);
+  background-size: 60%;
+  
+}
+
+/* .imgbk2 {
+  background-image: url(img/edit2.png);
   background-position: center;
   background-size: contain;
 }
+
+.imgbk3 {
+  background-image: url(img/edit3.png);
+  background-position: center;
+  background-size: contain;
+} */
 
 .bk-book .bk-page .color-square span,
 .bk-book .bk-cover-back .color-square span{
@@ -421,43 +460,80 @@ a {
 
 /* .background-color-ED5565{ } */
 /* .color-ED5565{ } */
-.background-color-DA4453{ background-color: #DA4453 }
-.color-DA4453{ color: #DA4453 }
+
+/* pag 2 */
+.background-color-DA4453{ background-color: #a50331 }
+.color-DA4453{ color: #a50331 }
+
 /* pag 3 */
-.background-color-FC6E51{ background-color: #FC6E51 }
-.color-FC6E51{ color: #FC6E51 }
-.background-color-E9573F{ background-color: #E9573F }
-.color-E9573F{ color: #E9573F }
-.background-color-FFCE54{ background-color: #FFCE54 }
-.color-FFCE54{ color: #FFCE54 }
-.background-color-FCBB42{ background-color: #FCBB42 }
-.color-FCBB42{ color: #FCBB42 }
-.background-color-A0D468{ background-color: #A0D468 }
-.color-A0D468{ color: #A0D468 }
-.background-color-8CC152{ background-color: #8CC152 }
-.color-8CC152{ color: #8CC152 }
-.background-color-48CFAD{ background-color: #48CFAD }
-.color-48CFAD{ color: #48CFAD }
-.background-color-37BC9B{ background-color: #37BC9B }
-.color-37BC9B{ color: #37BC9B }
-.background-color-4FC1E9{ background-color: #4FC1E9 }
-.color-4FC1E9{ color: #4FC1E9 }
-.background-color-3BAFDA{ background-color: #3BAFDA }
-.color-3BAFDA{ color: #3BAFDA }
+.background-color-FC6E51{ background-color: #ba0146 }
+.color-FC6E51{ color: #ba0146 }
+
+/* pag 4 */
+.background-color-E9573F{ background-color: #e42a59 }
+.color-E9573F{ color: #e42a59 }
+
+/* pag 5 */
+.background-color-FFCE54{ background-color: #f93f6d }
+.color-FFCE54{ color: #f93f6d }
+
+/* pag 6 */
+.background-color-FCBB42{ background-color: #f85684 }
+.color-FCBB42{ color: #f85684 }
+
+
+.background-color-A0D468{ background-color: #f488ae }
+.color-A0D468{ color: #f488ae }
+
+
+.background-color-8CC152{ background-color: #edbed5 }
+.color-8CC152{ color: #edbed5 }
+
+
+.background-color-48CFAD{ background-color: #bed5d5 }
+.color-48CFAD{ color: #bed5d5 }
+
+
+.background-color-37BC9B{ background-color: #e9e8d0 }
+.color-37BC9B{ color: #e9e8d0 }
+
+
+.background-color-4FC1E9{ background-color: #d7d7c0 }
+.color-4FC1E9{ color: #d7d7c0 }
+
+
+.background-color-3BAFDA{ background-color: #bebf9a }
+.color-3BAFDA{ color: #bebf9a }
+
+
 .background-color-5D9CEC{ background-color: #5D9CEC }
 .color-5D9CEC{ color: #5D9CEC }
+
+
 .background-color-4A89DC{ background-color: #4A89DC }
 .color-4A89DC{ color: #4A89DC }
+
+
 .background-color-AC92EC{ background-color: #AC92EC }
 .color-AC92EC{ color: #AC92EC }
+
+
 .background-color-967ADC{ background-color: #967ADC }
 .color-967ADC{ color: #967ADC }
+
+
 .background-color-EC87C0{ background-color: #EC87C0 }
 .color-EC87C0{ color: #EC87C0 }
+
+
 .background-color-D770AD{ background-color: #D770AD }
 .color-D770AD{ color: #D770AD }
+
+
 .background-color-AAB2BD{ background-color: #AAB2BD }
 .color-AAB2BD{ color: #AAB2BD }
+
+
 .background-color-656D78{ background-color: #656D78 }
 .color-656D78{ color: #656D78 }
 
@@ -706,3 +782,7 @@ a {
   display: block;
   position: relative;
 }
+
+
+/* iconos */
+
